@@ -1,0 +1,8 @@
+.cards{padding: 10px; border-radius: 5px; background-color: #fff; display: flex; flex-direction: column; gap: 10px;}
+.card-top{display: flex; gap: 5px; margin-left: -150px;}
+.card-top svg{opacity: 0; transition: 200ms;}
+.cards:hover  .card-top svg{ opacity: 1;}
+.card-title{flex: 1; gap: 10px;}
+.card-footer{display: flex; gap: 5px;margin-top: 3px;}
+.card-footer p{font-size: 14px;}
+.card-footer svg{color: grey; font-size: 15px;}

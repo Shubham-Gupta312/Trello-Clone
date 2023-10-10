@@ -1,0 +1,9 @@
+.edit-text{width: 100%;}
+.edit_display{background-color: aquamarine; border-radius: 4px; padding: 10px; text-align: center; cursor: pointer;}
+.edit_display:hover{background-color: #ccc;}
+.edit_form{display: flex; flex-direction: column; gap: 10px;}
+.edit_form input{border-radius: 5px; padding: 10px; font-size: 0.7rem;}
+.edit-footer{display: flex; gap: 10px; align-items: center;}
+.edit-footer button{outline: none; border: none; color: #fff; background-color: #1379ec; transition: 200ms; padding: 8px 16px; border-radius: 5px; cursor: pointer;}
+.edit-footer button:hover{background-color: #0776f4;}
+.edit-footer svg{cursor: pointer;}
