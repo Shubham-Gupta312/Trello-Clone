@@ -1,7 +1,6 @@
 import React from 'react';
 import './Card.css';
 import { IoIosMore } from 'react-icons/io';
-import {MdUpdate} from 'react-icons/md';
 
 const Card = () => {
   return (
@@ -12,9 +11,7 @@ const Card = () => {
             </div>
                 <IoIosMore/>
         </div>
-        <div className='card-footer'>
-            <p><MdUpdate/> 10 Oct</p>
-        </div>
+        
     </div>
   )
 }

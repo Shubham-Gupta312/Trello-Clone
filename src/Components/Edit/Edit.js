@@ -13,6 +13,7 @@ const Edit = (props) => {
                     if (props.onSubmit) props.onSubmit();
                 }}>
                     <input type='text'
+                        autoFocus
                         defaultValue={props.text}
                         placeholder={props.placeholder || "Enter Title"} />
                     <div className='edit-footer'>
