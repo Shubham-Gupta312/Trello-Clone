@@ -4,25 +4,32 @@ import { IoIosMore } from 'react-icons/io';
 import Card from '../Card/Card';
 import Edit from '../Edit/Edit';
 
-const Board = () => {
+const Board = (props) => {
 
   return (
     <>
       <div className='b-title'>
         <div className='board-top'>
           <p className='board-top-title'>
-            To-Do <span>3</span>
+            {props.boards?.title} <span>{` ${props.boards?.cards?.length}`}</span>
           </p>
           <div className='board-more'>
             <IoIosMore />
           </div>
         </div>
         <div className='board-cards'>
-          <Card />
+          {props.boards?.cards?.map((item) => (
+            <Card key={item.id} 
+                  cards={item}
+                  handleDragEnd={props.handleDragEnd}
+                  handleDragEnter={props.handleDragEnter}
+                  />
+          ))}
           <Edit
             displayCLass="boards_card_add"
             text="Add Card"
-            placeholder="Enter Card Title" />
+            placeholder="Enter Card Title"
+            onSubmit={(value) => props.addCard(value, props.boards?.id)} />
         </div>
       </div>
     </>
