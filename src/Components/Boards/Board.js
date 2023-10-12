@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Board.css';
 import { IoIosMore } from 'react-icons/io';
 import Card from '../Card/Card';
@@ -11,7 +11,7 @@ const Board = (props) => {
       <div className='b-title'>
         <div className='board-top'>
           <p className='board-top-title'>
-            {props.boards?.title} <span>{` ${props.boards?.cards?.length}`}</span>
+            {props.boards?.title}
           </p>
           <div className='board-more'>
             <IoIosMore />
@@ -23,6 +23,7 @@ const Board = (props) => {
                   cards={item}
                   handleDragEnd={props.handleDragEnd}
                   handleDragEnter={props.handleDragEnter}
+                  boardID={props.boards?.id}
                   />
           ))}
           <Edit

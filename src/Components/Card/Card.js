@@ -1,23 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Card.css';
-import { IoIosMore } from 'react-icons/io';
+import CardInfo from './CradInfo/CardInfo';
 
 const Card = (props) => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
-    <div className='cards'
-      draggable
-      onDragEnd={() => props.handleDragEnd(props.cards?.id, props.boards?.id)}
-      onDragEnter={() => props.handleDragEnter(props.cards?.id, props.boards?.id)}
-    >
-
-      <div className='card-top'>
-        <div className='card-title'>
-          <p className='title'>{props.cards?.title}</p>
+    <>
+      {
+        showModal && <CardInfo onClose={() => {
+          // console.log("call")
+          setShowModal(false)}} />
+      }
+      <div className='cards'
+        draggable
+        onDragEnter={() => props.handleDragEnter(props.cards?.id, props.boardID)}
+        onDragEnd={() => props.handleDragEnd(props.cards?.id, props.boardID)}
+        onClick={() => setShowModal(true)}
+      >
+        <div className='card-top'>
+          <div className='card-title'>
+            <p className='title'>{props.cards?.title}</p>
+          </div>
         </div>
-        <IoIosMore />
-      </div>
 
-    </div>
+      </div>
+    </>
   )
 }
 
