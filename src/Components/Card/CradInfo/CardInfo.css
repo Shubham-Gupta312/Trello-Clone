@@ -1,0 +1,8 @@
+.card-info{padding: 30px; background-color: #fff; display: flex; flex-direction: column; gap: 20px; border-radius: 20px;}
+.info-box{display: flex; flex-direction: column; gap: 10px;}
+.info-box-title{font-weight: bold; font-size: 1.3rem;display: flex; gap: 10px;}
+.info-box-title svg{margin-top: 5px;}
+.info-box-desc{font-weight: bold; font-size: 1.3rem;display: flex; gap: 10px;}
+.info-box-desc svg{margin-top: 5px;}
+.info-box-activity{font-weight: bold; font-size: 1.3rem;display: flex; gap: 10px;}
+.info-box-activity svg{margin-top: 5px;}

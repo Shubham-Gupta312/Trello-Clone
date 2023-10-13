@@ -1,9 +1,9 @@
-.b-title{min-width: 250px; max-height: 100%; display: flex; flex-direction: column; gap: 20;}
+.b-title{min-width: 250px; max-height: 100%; display: flex; flex-direction: column; gap: 20; margin-left: 15px;}
 .board-top{display: flex; margin-top: 10px; margin-bottom: 10px;}
 .board-top-title{flex: 1; display: flex; align-items: center; font-weight: bold; margin-left: 5px;}
 .board-top-title span{color: gray;}
 .board-more{position: relative;}
-.board-cards{background-color: #f8f8f8; display: flex; flex-direction: column; gap: 10px; padding: 10px; border-bottom: 10px;}
+.board-cards{background-color: #dbdbdb;; display: flex; flex-direction: column; gap: 10px; padding: 10px; border-radius: 10px;}
 .boards_card_add{background-color: #fff; border-radius: 5px;}
 .board-dropdown{background-color: #fff; width: 100px; padding: 10px; border-radius: 5px; box-shadow: 1px 0 20px rgba(0, 0, 0, 0.1);}
 .board-dropdown p {cursor: pointer;}

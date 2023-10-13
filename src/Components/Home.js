@@ -19,34 +19,34 @@ const Home = () => {
                 },
             ]
         },
-        // {
-        //     id: 2,
-        //     title: "Doing",
-        //     cards: [
-        //         {
-        //             id: 1010,
-        //             title: "Setup Material UI",
-        //         },
-        //     ]
-        // },
-        // {
-        //     id: 3,
-        //     title: "Done",
-        //     cards: [
-        //         {
-        //             id: 10001,
-        //             title: "Initalise React Project",
-        //         },
-        //         {
-        //             id: 10002,
-        //             title: "Setup Eslint Prettier",
-        //         },
-        //         {
-        //             id: 10003,
-        //             title: "New Task Updated",
-        //         },
-        //     ]
-        // },
+        {
+            id: 2,
+            title: "Doing",
+            cards: [
+                {
+                    id: 1010,
+                    title: "Setup Material UI",
+                },
+            ]
+        },
+        {
+            id: 3,
+            title: "Done",
+            cards: [
+                {
+                    id: 10001,
+                    title: "Initalise React Project",
+                },
+                {
+                    id: 10002,
+                    title: "Setup Eslint Prettier",
+                },
+                {
+                    id: 10003,
+                    title: "New Task Updated",
+                },
+            ]
+        },
     ]);
 
     const [target, setTarget] = useState({
